@@ -12,13 +12,11 @@ def process_queue():
         notification = queue.pop(0)
         for attempt in range(1, retries + 1):
             try:
-                # Simulate sending notification
                 print(f"Attempt {attempt}: Sending notification {notification}")
-                # Fake random failure
                 if notification.get("type") == "fail":  
                     raise Exception("Simulated failure")
                 print("Notification sent successfully!")
-                break  # break retry loop on success
+                break 
             except Exception as e:
                 print(f"Failed to send notification: {e}")
                 if attempt == retries:
