@@ -80,6 +80,11 @@ Future Improvements
 - Add asynchronous processing for handling notifications.
 - Add authentication and authorization for API security.
 
-Author
+Live API Documentation
 
+You can test the API endpoints here:
+
+[Notification Service API Docs](https://notification-service-5g5p.onrender.com/docs)
+
+Author
 YASH RAJ (Internship Assignment)
